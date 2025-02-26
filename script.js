@@ -11,6 +11,14 @@ function register(ev) {
         console.log('Usuarios não conferem')
     }
 }
+
+function removeEvent() {
+    button.removeEventListener('click', register)
+    console.log('Evento removido')
+}
+
+
 // Eventos
 const button = document.getElementById('register-button')
 button.addEventListener('click', register)
+
